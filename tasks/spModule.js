@@ -25,7 +25,7 @@ var winPath = {
 module.exports = function(grunt) {
   'use strict';
 
-  grunt.registerMultiTask('spModule', 'Creates SharePoint Module files', function() {
+  grunt.registerMultiTask('sp_module', 'Creates SharePoint Module files', function() {
     var me = this;
     var options = this.options();
 

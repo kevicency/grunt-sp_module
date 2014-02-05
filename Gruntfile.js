@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    spModule: {
+    sp_module: {
       test: {
         options: {
           name: 'myModuleName'
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 
   // Whenever the 'test' task is run, first create some files to be cleaned,
   // then run this plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean:test', 'copy', 'spModule:test', 'nodeunit']);
+  grunt.registerTask('test', ['clean:test', 'copy', 'sp_module:test', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);

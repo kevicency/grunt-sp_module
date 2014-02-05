@@ -1,22 +1,22 @@
 {
-  "name": "grunt-spModule",
+  "name": "grunt-sp_module",
   "description": "Create SharePoint Module files",
   "version": "0.0.1",
-  "homepage": "https://github.com/kmees/grunt-spModule",
+  "homepage": "https://github.com/kmees/grunt-sp_module",
   "author": {
     "name": "Kevin Mees"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/kmees/grunt-spModule.git"
+    "url": "git://github.com/kmees/grunt-sp_module.git"
   },
   "bugs": {
-    "url": "https://github.com/kmees/grunt-spModule/issues"
+    "url": "https://github.com/kmees/grunt-sp_module/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/kmees/grunt-spModule/blob/master/LICENSE-MIT"
+      "url": "https://github.com/kmees/grunt-sp_module/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -40,7 +40,6 @@
     "grunt": "~0.4.2"
   },
   "keywords": [
-    "gruntplugin",
-    "SharePoint App"
+    "gruntplugin"
   ]
 }
