@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 //         </Module>
 //         </Elements>
     me.files.forEach(function(fileConfig) {
-      var cwdParts = fileConfig.cwd.split(path.sep);
+      var cwdParts = fileConfig.cwd.split('/');
       var base = cwdParts[cwdParts.length - 1];
 
       var elementsXml = xmlbuilder.create('Elements', {encoding: 'UTF-8'})
