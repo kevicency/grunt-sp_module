@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="myModuleName">
+    <File Path="myModule\foo.html" Url="myModule/foo.html" ReplaceContent="TRUE"/>
+    <File Path="myModule\subdir\bar.html" Url="myModule/subdir/bar.html" ReplaceContent="TRUE"/>
+  </Module>
+</Elements>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectItem xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel" Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="myModule\" Type="ElementManifest"/>
+    <ProjectItemFile Source="foo.html" Target="myModule\" Type="ElementFile"/>
+    <ProjectItemFile Source="subdir\bar.html" Target="myModule\subdir\" Type="ElementFile"/>
+  </Files>
+</ProjectItem>
