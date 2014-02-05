@@ -1,5 +1,4 @@
-# grunt-sp_module
-
+# grunt-sp_module [![Build Status](https://secure.travis-ci.org/kmees/grunt-sp_module.png?branch=master)](https://travis-ci.org/kmees/grunt-sp_module)
 > Automatic generation of Elements.xml and SharePointProjectItem.spdata files for SharePoint Modules
 
 
