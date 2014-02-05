@@ -1,7 +1,7 @@
 {
   "name": "grunt-sp_module",
   "description": "Create SharePoint Module files",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/kmees/grunt-sp_module",
   "author": {
     "name": "Kevin Mees"
