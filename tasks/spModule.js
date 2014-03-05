@@ -29,12 +29,6 @@ module.exports = function(grunt) {
     var me = this;
     var options = this.options();
 
-// <?xml version="1.0" encoding="utf-8"?>
-// <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-//   <Module Name="foo">
-//       <File Path="foo\Sample.txt" Url="foo/Sample.txt" ReplaceContent="TRUE" />
-//         </Module>
-//         </Elements>
     me.files.forEach(function(fileConfig) {
       var cwdParts = fileConfig.cwd.split('/');
       var base = cwdParts[cwdParts.length - 1];
