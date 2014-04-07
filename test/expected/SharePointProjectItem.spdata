@@ -2,7 +2,9 @@
 <ProjectItem xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel" Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site">
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="myModule\" Type="ElementManifest"/>
+    <ProjectItemFile Source="baz.html" Target="myModule\" Type="ElementFile"/>
     <ProjectItemFile Source="foo.html" Target="myModule\" Type="ElementFile"/>
     <ProjectItemFile Source="subdir\bar.html" Target="myModule\subdir\" Type="ElementFile"/>
+    <ProjectItemFile Source="with.dot\bar.html" Target="myModule\with.dot\" Type="ElementFile"/>
   </Files>
 </ProjectItem>

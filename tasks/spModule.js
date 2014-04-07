@@ -7,6 +7,7 @@
  */
 
 var path = require('path');
+var fs = require('fs');
 var xmlbuilder = require('xmlbuilder');
 
 var winPath = {
@@ -52,20 +53,23 @@ module.exports = function(grunt) {
 
 
       fileConfig.src.forEach(function(relativeFile) {
-        var file = winPath.join(base, relativeFile);
-        var dirname = path.dirname(relativeFile);
-        relativeFile = winPath.convert(relativeFile);
+        var stats = fs.statSync(path.join(fileConfig.cwd, relativeFile))
+        if (stats.isFile()) {
+          var file = winPath.join(base, relativeFile);
+          var dirname = path.dirname(relativeFile);
+          relativeFile = winPath.convert(relativeFile);
 
-        elementsXml.ele('File')
-          .att('Path', file)
-          .att('Url', file.replace(/\\/g, '/'))
-          .att('ReplaceContent', 'TRUE');
+          elementsXml.ele('File')
+            .att('Path', file)
+            .att('Url', file.replace(/\\/g, '/'))
+            .att('ReplaceContent', 'TRUE');
 
-        var target = winPath.appendTrailingSlash(winPath.join(base, dirname));
-        projectItemXml.ele('ProjectItemFile')
-          .att('Source', relativeFile)
-          .att('Target', target)
-          .att('Type', 'ElementFile');
+          var target = winPath.appendTrailingSlash(winPath.join(base, dirname));
+          projectItemXml.ele('ProjectItemFile')
+            .att('Source', relativeFile)
+            .att('Target', target)
+            .att('Type', 'ElementFile');
+        }
       });
 
       var elementFile = path.join(fileConfig.cwd, 'Elements.xml');

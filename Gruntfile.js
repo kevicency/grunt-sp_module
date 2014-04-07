@@ -56,7 +56,9 @@ module.exports = function(grunt) {
   // Setup a test helper to create some folders to clean.
   grunt.registerTask('copy', 'Copy fixtures to a .tmp/', function() {
     grunt.file.copy('test/fixtures/foo.html', '.tmp/myModule/foo.html');
+    grunt.file.copy('test/fixtures/baz.html', '.tmp/myModule/baz.html');
     grunt.file.copy('test/fixtures/subdir/bar.html', '.tmp/myModule/subdir/bar.html');
+    grunt.file.copy('test/fixtures/with.dot/bar.html', '.tmp/myModule/with.dot/bar.html');
   });
 
   // Whenever the 'test' task is run, first create some files to be cleaned,
